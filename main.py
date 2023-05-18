@@ -1,10 +1,11 @@
 # This is a sample Python script.
 import json
+import os
 import requests
 from bs4 import BeautifulSoup
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-token = "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"
+token = os.getenv('GITHUB_TOKEN')
 
 data = {
     'repo': 'vuejs/vue',
