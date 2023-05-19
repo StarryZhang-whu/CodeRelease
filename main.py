@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # configure GitHub api
-token = "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"
+token = os.environ.get('GITHUB_TOKEN')
 headers = {
     "Authorization": f"token {token}",
     "Accept": "application/vnd.github.v3+json"
